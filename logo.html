@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    #logo {
+      max-width: 80%;
+      animation: fadeInZoom 1s forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img id="logo" src="https://i.imgur.com/igGnKPm.png" alt="Your Logo">
+  </div>
+</body>
+</html>
